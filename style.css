@@ -1,0 +1,339 @@
+/*Cabecera*/
+
+ul
+{
+ list-style-type:circle; /*circulo sin relleno*//*square;*/
+ 
+}
+
+ol
+{
+ list-style-type:/*lower-latin;upper-latin;*/decimal-leading-zero;
+}
+
+.menu
+{
+ list-style:none; 
+ margin:0;
+ padding:0;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+.menu li
+{
+ display:inline-block; 
+ 
+}
+
+.menu li a
+{
+ padding:10px 20px;
+ display:inline-block;
+ color: #000000;
+}
+
+.menu li a:hover
+{
+ background:#CB9DF4 ;
+ color:#000000;
+}
+
+header nav
+{
+ background:#fffff ;
+}
+
+header nav ul li a
+{
+ text-decoration:none; /*quita subrayado*/
+}
+
+/*Cuerpo*/
+
+form /*Formulario*/
+{
+ width:60%;
+ border:2px solid #B200FA ;
+ margin:20px;
+ padding:20px;
+ background: #E4A2FF ;
+ font-size: 16px;
+}
+
+label
+{
+ font-size:18px;
+ color: 00000;
+ 
+}
+
+input, textarea
+{
+ margin-bottom:20px;
+ width:100%;
+ padding:10px; 
+ border:1px solid #ccc; 
+ color: #00000 ;
+ background: #ccc ;
+}
+
+input.menu
+{
+  background:#ffffff ;
+  border:2px solid #B200FA ;
+}
+
+select
+{
+  color: 000000;
+}/*Formulario*/
+
+.main .articles/*Formulario a la izquierda*/
+{
+ width:70%; /*del total de area del dispositivo*/
+ /*margin-right:1%; separación entre bloques*/	
+ float:left; /*envia contenido a la izquierda*/
+
+}
+
+aside
+{
+ width:30%;
+ background:#fffff;
+ float:left;
+ padding:20px;
+ box-sizing:border-box;/* acomoda el tercer bloque a la derecha*/
+}
+
+/*Espacio entre bloques de texto*/
+.main .articles article
+{
+ width:90%;
+ padding:20px;
+ background-color: #d8b8f700 ;
+ margin-bottom:20px;
+}
+
+table
+{
+    border-spacing: 10px;
+    background-color: #ecdef900 ;
+}
+
+
+
+
+
+
+.slide {
+                position: relative;
+                box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+                margin-top: 26px;
+            }
+            .slide-inner {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 100%
+            }
+            .slide-open:checked + .slide-item {
+                position: static;
+                opacity: 100;
+            }
+            .slide-item {
+                position: absolute;
+                opacity: 0;
+                -webkit-transition: opacity 0.6s ease-out;
+                transition: opacity 0.6s ease-out;
+            }
+            .slide-item img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+            }
+            .slide-control {
+                background: rgba(0, 0, 0, 0.28);
+                border-radius: 50%;
+                color: #fff;
+                cursor: pointer;
+                display: none;
+                font-size: 40px;
+                height: 40px;
+                line-height: 35px;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translate(0, -50%);
+                cursor: pointer;
+                -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                text-align: center;
+                width: 40px;
+                z-index: 10;
+            }
+            .slide-control.prev {
+                left: 2%;
+            }
+            .slide-control.next {
+                right: 2%;
+            }
+            .slide-control:hover {
+                background: rgba(0, 0, 0, 0.8);
+                color: #aaaaaa;
+            }
+            #slide-1:checked ~ .control-1,
+            #slide-2:checked ~ .control-2,
+            #slide-3:checked ~ .control-3 {
+                display: block;
+            }
+            .slide-indicador {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                bottom: 2%;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 10;
+            }
+            .slide-indicador li {
+                display: inline-block;
+                margin: 0 5px;
+            }
+            .slide-circulo {
+                color: #828282;
+                cursor: pointer;
+                display: block;
+                font-size: 35px;
+            }
+            .slide-circulo:hover {
+                color: #aaaaaa;
+            }
+            #slide-1:checked ~ .control-1 ~ .slide-indicador 
+                 li:nth-child(1) .slide-circulo,
+            #slide-2:checked ~ .control-2 ~ .slide-indicador 
+                  li:nth-child(2) .slide-circulo,
+            #slide-3:checked ~ .control-3 ~ .slide-indicador 
+                  li:nth-child(3) .slide-circulo {
+                color: #428bca;
+            }
+            #titulo {
+                width: 100%;
+                position: absolute;
+                padding: 0px;
+                margin: 0px auto;
+                text-align: center;
+                font-size: 27px;
+                color: rgba(255, 255, 255, 1);
+                font-family: 'Open Sans', sans-serif;
+                z-index: 9999;
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+                     -1px 0px 2px rgba(255, 255, 255, 0);
+            }
+
+            table
+            {
+                background-color: #fdc0e6 ;
+            }
+
+            
+          
+
+footer
+{
+    background-color: #fdc0e6;
+}
+
+
+
+
+table th:hover /*Logos de las marcas*/
+{
+  background:#d8b8f7; /*Color del efecto*/
+  background: rgb(255, 255, 255);/*Cambio de color al pasar el cursor*/
+  
+}
+
+
+
+
+
+.caracteristicas
+{
+ border-spacing:100px;/* Espacio entre las columnas*/
+ background-color: #d8b8f700;/*Color de fondo*/
+ color:#000000;/*Color del texto*/
+ 
+}
+
+
+
+p
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1
+{
+    font-family: monospace;
+}
+
+.beneficios
+{
+    background-color:#d8b8f700;
+}
+
+
+
+
+.logo img
+{
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.beneficios img
+{
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    
+}
+
+.caracteristicas img
+{
+    border-radius: 10px;
+}
+    
+    
+
+
+/*body*/
+{
+    background:url(https://upload.wikimedia.org/wikipedia/commons/0/06/Skatepark_cs.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000000;
+    }
+
+    .marcas
+    {
+        background-color: #d8b8f700;
+        border-spacing: 20px;
+    }
+
+    .marcas img
+    {
+        border-radius: 10px;
+    }
+
+    body
+    {
+        background-color: #ffffff;
+    }
+    
+    
